@@ -13,6 +13,12 @@ struct Post {
     var description: String
 }
 
+struct Post2 {
+    var id: Int
+    var description: String
+}
+
+
 struct AsyncImage<Placeholder: View>: View {
     @StateObject private var loader: ImageLoader
     private let placeholder: Placeholder
