@@ -8,6 +8,10 @@
 
 import SwiftUI
 
+struct Post: Codable {
+    var name: String
+}
+
 struct AsyncImage<Placeholder: View>: View {
     @StateObject private var loader: ImageLoader
     private let placeholder: Placeholder
